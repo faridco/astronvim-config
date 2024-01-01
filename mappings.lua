@@ -56,9 +56,9 @@ return {
 
     -- Git Menu
     -- Menu mappings
-    ["<leader>gh"] = false, -- disable Reset Git Hunk mapping, used for Octo in plugins/git.lua
-    ["<leader>gH"] = { function() require("gitsigns").stage_hunk() end, desc = "Stage Git hunk" },
-    ["<leader>gn"] = { name = " Neogit" }, -- Neogit menu
+    -- ["<leader>gh"] = false, -- disable Reset Git Hunk mapping, used for Octo in plugins/git.lua
+    -- ["<leader>gH"] = { function() require("gitsigns").stage_hunk() end, desc = "Stage Git hunk" },
+    -- ["<leader>gn"] = { name = " Neogit" }, -- Neogit menu
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
