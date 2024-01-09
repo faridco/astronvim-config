@@ -99,6 +99,17 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
+      enable_git_status = false,
+      sources = {
+        "filesystem",
+        -- "document_symbols",
+      },
+      source_selector = {
+        sources = {
+          { source = "filesystem" },
+          -- { source = "document_symbols" },
+        },
+      },
       filesystem = {
         filtered_items = {
           -- when true, they will just be displayed differently than normal items

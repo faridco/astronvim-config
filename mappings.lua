@@ -54,6 +54,8 @@ return {
     -- Editing
     ["zZ"] = { "<cmd>ZenMode<cr>", desc = " Zen mode" },
 
+    [";"] = { "<cmd>Telescope buffers<cr>", desc = "Buffers" },
+
     -- Git Menu
     -- Menu mappings
     -- ["<leader>gh"] = false, -- disable Reset Git Hunk mapping, used for Octo in plugins/git.lua
