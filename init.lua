@@ -100,5 +100,10 @@ return {
     --   callback = function() vim.bo.commentstring = ";; %s" end,
     --   desc = "Lisp style line comment",
     -- })
+
+    vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+      pattern = { "*" },
+      command = [[%s/\s\+$//e]],
+    })
   end,
 }
